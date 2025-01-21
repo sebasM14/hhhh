@@ -1,0 +1,56 @@
+/* Estilos generales */
+body {
+    background-color: #f8f9fa; /* Color de fondo claro */
+}
+
+/* Margen superior */
+.container-fluid {
+    margin-top: 10cm; /* Margen superior de 10 centímetros */
+}
+
+/* Estilo para la tarjeta */
+.card {
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Estilo para la cabecera de la tarjeta */
+.card-header {
+    background: linear-gradient(to right, #007bff, #6610f2); /* Fondo degradado */
+}
+
+/* Efecto de sombra en la tarjeta */
+.card.shadow-lg {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de los botones */
+.btn-success {
+    background-color: #28a745; /* Color verde para el botón de registrar */
+    border: none; /* Sin borde */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Color rojo para el botón de cancelar */
+    border: none; /* Sin borde */
+}
+
+/* Estilo para los campos de formulario */
+.form-control {
+    border-radius: 5px; /* Bordes redondeados para los campos */
+}
+
+/* Espaciado entre campos */
+.mb-4 {
+    margin-bottom: 1.5rem; /* Espacio adicional entre campos */
+}
+
+/* Estilo para los mensajes de error */
+.text-danger {
+    color: #dc3545; /* Color rojo para mensajes de error */
+}
+
+/* Estilo para la imagen de suplementos */
+.img-fluid {
+    margin-top: 20px; /* Espacio superior para la imagen */
+    border-radius: 15px; /* Bordes redondeados en la imagen */
+}

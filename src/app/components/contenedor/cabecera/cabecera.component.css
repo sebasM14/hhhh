@@ -1,0 +1,32 @@
+.top-bar {
+  font-size: 14px;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 15px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #9a1b1b !important;
+}
+
+.navbar-nav .fa-search,
+.navbar-nav .fa-user,
+.navbar-nav .fa-shopping-cart {
+  font-size: 20px;
+  color: white;
+}
+
+.badge {
+  position: relative;
+  top: -10px;
+  right: 10px;
+}
+.nav-link i {
+  margin-right: 8px; /* Añade espacio entre el ícono y el texto */
+}

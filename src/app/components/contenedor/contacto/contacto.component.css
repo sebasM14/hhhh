@@ -1,0 +1,155 @@
+.contact-container {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #007bff, #0ec777, #1c8a65); /* Degradado tornasol */
+  background-color: #007bff; /* Color de fondo para el título */
+  -webkit-background-clip: text; /* Clipping para texto */
+  -webkit-text-fill-color: transparent; /* Color de relleno transparente */
+  padding: 90px; /* Espaciado para el título */
+  border-radius: 4px; /* Bordes redondeados */
+  width: 100%; /* Ancho del título */
+  margin:0 auto; /* Centrando el título */
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info, .form-section {
+  width: 60%; /* Cada sección ocupa el 50% */
+  padding: 1rem; /* Espaciado interno */
+  background-color: #1a1a1a; /* Fondo de las secciones */
+  border-radius: 8px; /* Bordes redondeados */
+  margin-right: 1rem; /* Espacio entre las secciones */
+}
+
+
+/* Removemos el margen derecho del último elemento */
+.form-section {
+  margin-right: 0; /* Remover margen derecho en la última sección */
+}
+
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+  }
+  
+  .contact-info, .form-section {
+    width: 100%; /* Ambas secciones ocupan el 100% */
+    margin-right: 0; /* Remover margen derecho en móviles */
+  }
+}
+
+.opening-times,
+.contact-details {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #007bff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.opening-times ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.opening-times li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.day {
+  color: #999;
+}
+
+.hours {
+  color: #007bff;
+}
+
+.telefono, .email{
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-media img {
+  width: 24px;
+  height: 24px;
+}
+
+.form-section {
+  width: 45%;
+}
+.contact-form {
+  width: 100%; /* Ancho completo */
+}
+
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #999;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+textarea {
+  height: 100px;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .form-section {
+    width: 100%;
+  }
+}
+
+.terra-section {
+  display: none; /* Oculta por defecto la sección */
+}

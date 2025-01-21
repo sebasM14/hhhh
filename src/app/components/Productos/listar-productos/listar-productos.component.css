@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra la tabla horizontalmente */
+  justify-content: flex-start;
+  background: linear-gradient(135deg, #0038f5, #9f03ff);
+  color: white;
+  padding: 40px;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif; /* Cambia la fuente a una más moderna */
+}
+
+.table-responsive {
+  margin: 20px 0; /* Margen superior e inferior */
+  border-radius: 8px;
+  overflow: hidden; /* Evita el desbordamiento */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de elevación */
+}
+
+table {
+  width: 100%;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Fondo tornasol */
+  border-radius: 8px;
+  overflow: hidden;
+  border-collapse: collapse; /* Elimina el espacio entre celdas */
+}
+
+thead th {
+  background-color: #0a56a1d9; /* Color de fondo para los encabezados */
+  text-align: center;
+  padding: 15px; /* Mayor espacio en el encabezado */
+  font-size: 1.1em; /* Aumenta el tamaño de la fuente */
+  text-transform: uppercase; /* Transforma el texto a mayúsculas */
+  letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+tbody tr {
+  transition: background-color 0.3s, transform 0.3s; /* Suaviza el cambio de color y la transformación */
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Color al pasar el mouse */
+  transform: translateY(-2px); /* Eleva la fila al pasar el mouse */
+}
+
+tbody td {
+  padding: 12px; /* Espaciado en las celdas */
+  text-align: center; /* Alineación central */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Línea divisoria más sutil */
+  font-size: 0.95em; /* Ajusta el tamaño de la fuente */
+  background: rgba(255, 255, 255, 0.05); /* Fondo ligeramente transparente para las celdas */
+}
+
+tbody td:first-child {
+  font-weight: bold; /* Destaca el código */
+}

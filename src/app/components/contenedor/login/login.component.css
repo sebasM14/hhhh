@@ -1,0 +1,98 @@
+/* Contenedor principal del formulario de login */
+.contact-container {
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Color de fondo */
+}
+
+/* Encabezado de la página */
+.page-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* Estilo de los encabezados */
+.heading {
+    font-size: 70px;
+    color: #333; /* Color del texto */
+}
+
+/* Estilo del texto descriptivo */
+.page-header p {
+    color: #666; /* Color del texto */
+}
+
+/* Lista de bloques de cuenta */
+.account__block-list {
+    margin-top: 30px;
+}
+
+/* Estilo de cada bloque de entrada */
+.account__block-item {
+    margin-bottom: 25px;
+}
+
+/* Estilo de los campos de entrada */
+.input {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* Campo de entrada */
+.input__field {
+    width: 100%;
+    padding: 10px;
+    border: 6px solid #ccc; /* Color del borde */
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilo de la etiqueta del campo */
+.input__label {
+    position: absolute;
+    top: 5px; /* Para que la etiqueta esté encima del campo */
+    left: 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Botón de envío */
+.form__submit {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Color del botón */
+    color: #fff; /* Color del texto del botón */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efecto hover para el botón */
+.form__submit:hover {
+    background-color: #0056b3; /* Color del botón al pasar el ratón */
+}
+
+/* Enlace secundario */
+.form__secondary-action {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo del enlace */
+.link {
+    color: #007bff; /* Color del enlace */
+    text-decoration: underline; /* Subrayar el enlace */
+}
+
+.link:hover {
+    color: #0056b3; /* Color del enlace al pasar el ratón */
+}
+
+/* Estilo para el spinner de carga */
+.loader-button__loader {
+    display: inline-block;
+    margin-left: 10px;
+}

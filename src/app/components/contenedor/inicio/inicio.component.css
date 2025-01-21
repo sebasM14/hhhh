@@ -1,0 +1,170 @@
+/* Estilos generales */
+body {
+  background-color: black;
+  color: white;
+}
+
+/* Animaciones de texto en overlay */
+.video-overlay h1, .video-overlay p {
+  animation: moveAndChange 5s infinite alternate;
+}
+
+@keyframes moveAndChange {
+  0% {
+      transform: translate(-50%, -50%);
+      color: white;
+  }
+  50% {
+      transform: translate(-50%, -45%);
+      color: rgb(0, 255, 179); /* Color intermedio */
+  }
+  100% {
+      transform: translate(-50%, -50%);
+      color: white;
+  }
+}
+
+/* Estilo general para la galería */
+.product-category {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.category {
+  position: relative;
+  width: 30%; /* Ajusta el ancho según sea necesario */
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 10px; /* Esquinas redondeadas */
+  transition: transform 0.3s ease;
+}
+
+.category img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Esquinas redondeadas */
+  transition: transform 0.3s ease;
+}
+
+.category:hover img {
+  transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+.category h2,
+.category p {
+  position: absolute;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.category h2 {
+  bottom: 10px;
+}
+
+.category p {
+  bottom: 40px;
+}
+
+/* Estilos de tarjeta */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Estilos de precios */
+.price {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 10px;
+}
+
+.discounted-price {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Botones */
+.button-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Footer de tarjeta */
+.card-footer {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-top: 1px solid #dee2e6;
+}
+
+.card-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Carrusel */
+.carousel .card {
+  width: 300px;
+}
+
+.carousel .card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel .d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mx-2 {
+  margin-left: 10px;
+  margin-right: 10px;
+}

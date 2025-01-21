@@ -1,0 +1,283 @@
+######################################
+
+
+
+ng g c components/Productos/login --skip-tests
+ng g c components/Productos/crearProductos --skip-tests
+ng g c components/Productos/administrarProductos --skip-tests
+ng g c components/Productos/actualizarProductos --skip-tests
+
+########################################
+########################################
+***
+<!-- Sección principal con carrusel e información -->
+ <section>
+   <!-- Sección principal con carrusel e información -->
+   <section style="display: flex; justify-content: space-between; align-items: center; padding: 50px; height: 100vh; color: #fff;">
+    
+    <!-- Sección izquierda: Carrusel -->
+    <div style="flex: 1; padding-right: 50px;">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="position: relative; overflow: hidden; border-radius: 20px;">
+        
+        <!-- Indicadores del carrusel -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Imágenes del carrusel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active" *ngFor="let imagen of arregloImagenes">
+            <img src="{{imagen.ruta}}" class="d-block w-100" alt="..." style="height: 500px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 10px;">
+              <h5 style="font-size: 2rem;"></h5>
+              <p>{{imagen.descripcion}}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Sección derecha: Información -->
+   
+  </section>
+
+
+*******************************
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barra de Menú</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    /* Barra de navegación flotante en la parte inferior */
+    .navbar {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      color: white;
+      padding: 10px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 700px;
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+      z-index: 1000;
+    }
+
+    /* Estilo de cada icono y texto */
+    .icon-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .icon-box i {
+      font-size: 24px;
+      color: #007bff;
+      margin-bottom: 5px;
+    }
+
+    .icon-box:hover {
+      color: #007bff;
+    }
+
+    /* Estilo adicional para logo */
+    .navbar-brand img {
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de navegación flotante -->
+  <div class="navbar">
+    <a href="https://proscience.com.co/" class="icon-box">
+      <i class="fas fa-home"></i>
+      <span>INICIO</span>
+    </a>
+    <a href="https://proscience.com.co/tiendapro/" class="icon-box">
+      <i class="fas fa-store"></i>
+      <span>TIENDA</span>
+    </a>
+    <a href="https://proscience.com.co/contact-center/" class="icon-box">
+      <i class="fas fa-whatsapp"></i>
+      <span>CONTACTO</span>
+    </a>
+    <a href="http://proscience.com.co/seguir-envio/" class="icon-box">
+      <i class="fas fa-search"></i>
+      <span>SEGUIR ENVÍO</span>
+    </a>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Barra de notificaciones -->
+<div class="top-bar" style="background-color: #f2ecec; color: rgb(0, 0, 0); text-align: center; padding: 10px 0; position: fixed; top: 0; width: 100%; z-index: 1050;">
+  <span>
+    2-3 day shipping in continental US. Free Shipping on Orders Over $30. 
+    <a href="#" style="color: white; text-decoration: underline;">Shop Now</a>
+  </span>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0, 0, 0, 0.85); position: fixed; top: 40px; width: 100%; z-index: 1040;">
+  <div class="container-fluid">
+  
+    <a class="navbar-brand" href="#" [routerLink]="['/home']">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjiVwo2isIS27W5HuG8t_hKcrrA5vD7m-QgA&s" alt="" style="height: 50px">
+
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="#"
+            [routerLink]="['/home']"
+            routerLinkActive="router-link-active"
+            >Inicio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="#"
+            [routerLink]="['/contact']"
+            routerLinkActive="router-link-active"
+            >Contacto</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="#"
+            [routerLink]="['/aboutMe']"
+            routerLinkActive="router-link-active"
+            >Acerca De</a
+          >
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Operaciones
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a
+                class="dropdown-item"
+                href="#"
+                [routerLink]="['/producto/list']"
+                routerLinkActive="bg-primary text-white"
+                >Listar</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="#"
+                [routerLink]="['/producto/add']"
+                routerLinkActive="bg-primary text.white"
+                >Registrar
+              </a>
+            </li>
+            
+
+            <li>
+              <a
+                class="dropdown-item"
+                href="#"
+                [routerLink]="['/producto/admin']"
+                routerLinkActive="bg-primary text.white"
+                >admin
+              </a>
+            </li>
+
+          </ul>
+        </li>
+      </ul>
+      <div class="navbar-nav">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <span class="nav-item">
+          <a href="#" class="nav-link" [routerLink]="['/login']" >
+            <i class="fas fa-sign-in-alt"></i> Inicio Sesión
+          </a>
+        </span>
+      </div>
+    </div>
+
+    
+  </div>
+</nav>
